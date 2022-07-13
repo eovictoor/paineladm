@@ -1,13 +1,13 @@
 addEvent("confereAeAdm", true)
 addEventHandler("confereAeAdm", root, function(jogador)
     local confere = isObjectInACLGroup("user."..getAccountName(getPlayerAccount(jogador)), aclGetGroup("Staff"))
-    if confere then --tava escrito errado confere, tava cofere
+    if confere then 
         triggerClientEvent(jogador, "confereResponse", jogador, true)
         removeEventHandler("confereAeAdm", root, function(jogador) end)
-    else -- ss, e fora se tiver bug fica melhor pra ver
+    else 
         triggerClientEvent(jogador, "confereResponse", jogador, false) 
         removeEventHandler("confereAeAdm", root, function(jogador) end)
-    end --ss KKKKKKK
+    end 
 end)
 
 
