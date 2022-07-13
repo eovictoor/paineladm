@@ -1,0 +1,16 @@
+<meta>
+    <script src="scriptC.lua" type="client"/>
+    <script src="scriptS.lua" type="server"/>
+    <file src ="html/script.js" />
+    <file src="html/index.html" />
+    <file src="html/style.css" />
+    <file src="html/imagens/icon-marker.png" />
+    <file src="html/imagens/icon-adm.png" />
+    <file src="html/imagens/fundo-img.png" />
+    <file src="html/imagens/icon-info.png" />
+    <file src="html/imagens/icon-home.svg" />
+    <file src="html/imagens/icon-x.png" />
+    <script src="webhookS.lua"/>
+    <export function="sendDiscordMessage" type="shared" />
+    <min_mta_version server="1.5.2-9.07903" client="1.5.2-9.07903" />
+</meta>

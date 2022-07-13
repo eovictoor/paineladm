@@ -1,0 +1,312 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+::-webkit-scrollbar {
+    width: 2px;
+  }
+  /* Track */
+::-webkit-scrollbar-track {
+    background: rgba(105, 105, 105, 0);
+  }
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0);
+  }
+
+
+body{
+    user-select: none;
+    display: flex;
+    justify-content: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+#img-fundo{
+    width: 350px;
+    margin-top: -170px;
+    margin-left: 340px;
+}
+.leave-bar{
+    position: absolute;
+    margin-right: 96%;
+    margin-top: 1px;
+}
+.container{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 800px;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 12px 12px 12px;
+}
+
+.nav-bar{
+    height: 100%;
+}
+#home-page{
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 0px 12px 0px 0px;
+}#info-page{
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 0px 0px 12px 0px;
+}
+.nav-bar ul{
+    list-style: none;
+}.nav-bar ul li{
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding-top: 31%;
+    padding-bottom: 31%;
+}
+
+#img-icon{
+    width: 76px;
+    height: 80px;
+}#img-icon2{
+    width: 35px;
+    height: auto;
+}#img-icon2:hover{
+    animation: rotateX 2s infinite ease-in-out;
+}
+
+
+#home-page{
+    background-color: rgba(70, 130, 180, 0.541);
+    transition-duration: 650ms;
+}#home-page:hover{
+    background-color: rgba(255, 255, 255, 0);
+}#adm-page{
+    transition-duration: 650ms;
+}#adm-page:hover{
+    background-color: rgba(255, 255, 255, 0);
+}#info-page{
+    transition-duration: 650ms;
+}#info-page:hover{
+    background-color: rgba(255, 255, 255, 0);
+}#leave-page{
+    transition-duration: 650ms;
+}#leave-page:hover{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+.main{
+    color: black;
+    display: grid;
+    width: 92%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 11px 0px 0px 11px;
+}.main p{
+    transform: skewY(-5deg);
+    margin-top: 25%;
+    width: 50%;
+    font-size: 35px;
+    background-color: rgba(70, 130, 180, 0.541);
+}
+.adm{
+    display: none;
+    flex-direction: column;
+    width: 92%;
+    height: 100%;
+    background-color: rgb(255, 255, 255); /*background-color: rgba(0, 0, 0, 0.781);*/
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: black;
+    border-radius: 11px 0px 0px 11px;
+}.adm h3{
+    width: 100%;
+    border: 0;
+    text-align: center;
+    font-family: 'Secular One', sans-serif;
+}
+
+#img-eng{
+    margin-top: 250px;
+    width: 120px;
+    height: auto;
+}
+
+
+
+
+#item-tp{
+    margin: auto;
+    position: relative;
+    display: flex;
+    border: 2px groove rgba(70, 130, 180, 0.541);
+    width: 98%;
+    margin-top: 5px;
+    transition-duration: 650ms;
+    border-radius: 12px 12px 12px;
+}#item-tp img{
+    width: 50px;
+    height: auto;
+}#item-tp p{
+    font-family: 'Noto Sans', sans-serif;
+    margin-top: 8px;
+    font-size: 25px;
+    margin-left: 15px;
+}#item-tp:hover{
+    background-color: white;
+    color: black;
+}
+
+.teletransporte-classes{
+    margin: auto;
+    display: flex;
+    width: 50%;
+    height: 200px;
+    background-color: rgba(117, 117, 117, 0);
+    flex-direction: column;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}.teletransporte-classes button{
+    padding: 5px;
+}
+
+
+.concessionaria-classes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+}.concessionaria-classes form{
+    margin: auto;
+}.concessionaria-classes form input[type="number"]{
+    text-align: center;
+    border: 0;
+    outline: 0;
+    background-color: rgba(31, 31, 31, 0.678);
+    width: 200px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 12px 12px 12px;
+    margin-bottom: 8px;
+    color: white;
+}.concessionaria-classes form p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+}.concessionaria-classes button{
+    border-radius: 12px 12px 12px;
+    padding: 10px;
+    font-weight: bolder;
+    border: 0;
+    font-size: 20px;
+    margin: 8px;
+    color: white;
+    background-color: rgba(70, 130, 180, 0.541);
+    font-family: Arial, Helvetica, sans-serif;
+    transition-duration: 650ms;
+}.concessionaria-classes button:hover{
+    color: black;
+    background-color: white;
+}
+
+
+.garagem-classes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}.garagem-classes form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+}.garagem-classes form input[type="number"]{
+    text-align: center;
+    border: 0;
+    outline: 0;
+    background-color: rgba(31, 31, 31, 0.678);
+    width: 200px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 12px 12px 12px;
+    margin-bottom: 0;
+    color: white;
+}.garagem-classes form input[type="text"]{
+    text-align: center;
+    border: 0;
+    outline: 0;
+    background-color: rgba(31, 31, 31, 0.678);
+    width: 200px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 12px 12px 12px;
+    margin-bottom: 0;
+    color: white;
+}
+.garagem-classes form p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+}.garagem-classes button{
+    border-radius: 12px 12px 12px;
+    padding: 10px;
+    font-weight: bolder;
+    border: 0;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(70, 130, 180, 0.541);
+    font-family: Arial, Helvetica, sans-serif;
+    transition-duration: 650ms;
+}.garagem-classes button:hover{
+    color: black;
+    background-color: white;
+}#particular-garagem-form{
+    margin: auto;
+}
+#particular-concessionaria-form{
+    margin: auto;
+}
+
+.info{
+    display: none;
+    width: 92%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 11px 0px 0px 11px;
+}.info h1{
+    color: rgba(255, 0, 0, 0.767);
+    font-family: 'Bangers', cursive;
+}.info p{
+    color: black;
+    font-family: monospace;
+}
+
+
+@keyframes rotateX {
+    0%{
+        transform: rotate(0deg);
+    }100%{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg fill="#000000" viewBox="0.155 0.194 24 24" width="96px" height="96px" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <linearGradient id="color-0" bx:pinned="true">
+      <stop style="stop-color: #f9f7f7;"/>
+    </linearGradient>
+    <linearGradient id="color-1" bx:pinned="true">
+      <stop style="stop-color: #dbe2ef;"/>
+    </linearGradient>
+    <linearGradient id="color-2" bx:pinned="true">
+      <stop style="stop-color: #3f72af;"/>
+    </linearGradient>
+    <linearGradient id="color-3" bx:pinned="true">
+      <stop style="stop-color: #112d4e;"/>
+    </linearGradient>
+  </defs>
+  <path d="M 12 2.0996094 L 1 12 L 4 12 L 4 21 L 10 21 L 10 15 L 14 15 L 14 21 L 20 21 L 20 12 L 23 12 L 12 2.0996094 z" style="fill: rgb(255, 255, 255);"/>
+</svg>

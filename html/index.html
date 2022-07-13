@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="leave-bar" onclick="switchPages('leave')">
+            <img src="imagens/icon-x.png" id="img-icon2">
+        </div>
+        <div class="main">
+            <p>Use com moderação!</p>
+            <img src="imagens/fundo-img.png" id="img-fundo">
+        </div>
+
+
+
+
+
+
+        <div class="adm">
+                <h3>Teletransportes</h3>
+                <div class="teletransporte-classes">
+                    <blockquote id="item-tp" onclick="teleporte('pls')">
+                        <img src="imagens/icon-marker.png">
+                        <p>Prefeitura LS</p>
+                    </blockquote>
+                    <blockquote id="item-tp" onclick="teleporte('aerols')">
+                        <img src="imagens/icon-marker.png">
+                        <p>Aeroporto LS</p>
+                    </blockquote>
+                    <blockquote id="item-tp" onclick="teleporte('concls')">
+                        <img src="imagens/icon-marker.png">
+                        <p>Concessionaria LS</p>
+                    </blockquote>
+                    <blockquote id="item-tp"  onclick="teleporte('clv')">
+                        <img src="imagens/icon-marker.png">
+                        <p>Centro LV</p>
+                    </blockquote>
+                    <blockquote id="item-tp" onclick="teleporte('csf')">
+                        <img src="imagens/icon-marker.png">
+                        <p>Centro SF</p>
+                    </blockquote>
+                    <blockquote id="item-tp" onclick="teleporte('monte')">
+                        <img src="imagens/icon-marker.png">
+                        <p>Monte Chilliad</p>
+                    </blockquote>
+                </div>
+
+            <div class="concessionaria-classes">
+                <h3>Concessionaria</h3>
+                <form>
+                    <p>ID Do Veiculo</p>
+                    <input type="number" id="content-concessionaria-modelid">
+                    <p>Quantidade</p>
+                    <input type="number" id="content-concessionaria-quantia"><br>
+
+                </form>
+                <div id="particular-concessionaria-form">
+                    <button id="button-concessionaria-01" onclick="admConcGarage('concessionaria', 'Setar')">Setar</button> 
+                    <button id="button-concessionaria-02" onclick="admConcGarage('concessionaria', 'Adicionar')">Adicionar</button>
+                </div>
+            </div>
+    
+
+            <div class="garagem-classes">
+                <h3>Garagem</h3>
+                <form>
+                    <p>ID Do Jogador</p>
+                    <input type="number" id="content-garagem-modelid">
+                    <p>ID Do Veiculo</p>
+                    <input type="number" id="content-garagem-quantia"><br>
+                    <p>Nome Do Veiculo</p>
+                    <input type="text" id="content-garagem-nome"><br>
+                </form>
+                <div id="particular-garagem-form">
+                    <button onclick="admConcGarage('garagem', 'Adicionar')" id="button-garagem-01">Adicionar</button> 
+                    <button onclick="admConcGarage('garagem', 'Remover')" id="button-garagem-02">Remover</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="info">
+            <h1>Duvidas</h1>
+            <p>No painel de Concessionária, o botão setar, ele vai alterar o valor de estoque do veiculo pertencente ao ID que você colocou; Já o botão de adicionar, ele vai somar o estoque que já está setado com o valor que você colocou!</p>
+
+            <p>
+                No painel de Garagem, é simples, você coloca o ID do jogador, e o ID do veiculo e o nome (obrigatório) para adicionar um veiculo ao jogador, é só apertar em adicionar, e para remover um veiculo, aperte em remover!
+            </p>
+
+            <p> <strong>Cuidado</strong> ao utilizar esse painel. Ele está sendo monitorado 24/7!</p>
+        </div>
+
+        <div class="nav-bar">
+            <ul>
+                <li id="home-page">
+                    <img src="imagens/icon-home.svg" id="img-icon" onclick="switchPages('home')">
+                </li>
+    
+                <li id="adm-page">
+                    <img src="imagens/icon-adm.png" id="img-icon" onclick="switchPages('adm')">
+                </li>
+                <li id="info-page">
+                    <img src="imagens/icon-info.png" id="img-icon" onclick="switchPages('info')">
+                </li>
+            </ul>
+        </div>
+        
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
